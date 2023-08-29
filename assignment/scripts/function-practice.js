@@ -70,15 +70,15 @@ console.log("Is the number -3 positive?", resultTwo)
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
-  return (array[array.length -1]);
 
+  return (array[array.length -1]);
 }
 
 let theArray = getLast(['kittens', 'ducks', 'dogs', 'cows']);
-console.log(theArray);
+console.log('The last value in the array is: ', theArray);
 
 theArray = getLast([]);
-console.log(theArray);
+console.log("If the array is empty, this is what's returned: ", theArray);
 
 
 
