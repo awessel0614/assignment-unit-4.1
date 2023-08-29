@@ -35,28 +35,62 @@ console.log('The sum of the two numbers is: ', result);
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(number1, number2, number3) {
+  return number1*number2*number3;
 }
+let answer = multiplyThree(5,3,2);
+console.log('The multiplication of the three numbers equals: ', answer);
+
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
+    return true;
+  } else {
+  return false;
   }
-  return;
 }
 // Call the function to test each outcome (true & false) 
+let resultOne = isPositive(5);
+let resultTwo = isPositive(-3);
 // Write a separate console.log statement for each outcome
+console.log("Is the number 5 positive?", resultOne)
+console.log("Is the number -3 positive?", resultTwo)
+
+
+
+
+
+
+
 
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
+  return (array[array.length -1]);
 
 }
+
+let theArray = getLast(['kittens', 'ducks', 'dogs', 'cows']);
+console.log(theArray);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
