@@ -77,6 +77,9 @@ function getLast(array) {
 let theArray = getLast(['kittens', 'ducks', 'dogs', 'cows']);
 console.log(theArray);
 
+theArray = getLast([]);
+console.log(theArray);
+
 
 
 
