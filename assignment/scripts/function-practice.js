@@ -24,9 +24,14 @@ console.log(helloName('Ashley'));
 
 
 // 3. Function to add two numbers together & return the result
+
 function addNumbers(firstNumber, secondNumber) {
-  // return firstNumber + secondNumber;
+  return firstNumber + secondNumber;
 }
+let result = addNumbers(1,2);
+console.log('The sum of the two numbers is: ', result);
+
+
 
 
 // 4. Function to multiply three numbers & return the result
