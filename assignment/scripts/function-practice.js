@@ -61,12 +61,6 @@ console.log("Is the number -3 positive?", resultTwo)
 
 
 
-
-
-
-
-
-
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
@@ -82,25 +76,21 @@ console.log("If the array is empty, this is what's returned: ", theArray);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
+  for(let i=0; i<array.length; i++) {
+    if(array[i] === value) {
+      return true;
+    }
+  }
 }
+let theOtherArray = find(8, [1,3,9,10,8,22,42]);
+console.log('Was the value found?', theOtherArray);
+
+//theOtherArray = find(23, [5,3,9,10,8,22,41])
+//console.log('Was the value found?', theOtherArray);
 
 // ----------------------
 // Stretch Goals
