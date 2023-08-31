@@ -124,20 +124,32 @@ function sumAll(array) {
   // TODO: return the sum
 return sum;
 }
-let sum = sumAll([1,2,3,4,5]);
+let sum = sumAll([1,2,3,4,10]);
 console.log(sum);
 
 
 
 
+//I don't think i did this right? lol
 
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
 
+let newArray = [];
+function allPositive(array) {
+  for(let numb of array) {
+    if(numb > 0) {
+      newArray.push(numb); 
+    } 
+  }
+  return newArray;
 }
+
+let thingy = allPositive([-1,-2,-3,-4,-5,-6,-7,-8,-9,-10]);
+console.log(thingy);
+
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
