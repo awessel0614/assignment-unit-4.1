@@ -23,6 +23,7 @@ console.log(helloName('Ashley'));
 
 
 
+
 // 3. Function to add two numbers together & return the result
 
 function addNumbers(firstNumber, secondNumber) {
@@ -35,6 +36,7 @@ console.log('The sum of the two numbers is: ', result);
 
 
 // 4. Function to multiply three numbers & return the result
+
 function multiplyThree(number1, number2, number3) {
   return number1 * number2 * number3;
 }
@@ -43,8 +45,10 @@ console.log('The multiplication of the three numbers equals: ', answer);
 
 
 
+
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
+
 function isPositive(number) {
   if (number > 0) {
     return true;
@@ -61,8 +65,10 @@ console.log("Is the number -3 positive?", resultTwo)
 
 
 
+
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+
 function getLast(array) {
 
   return (array[array.length - 1]);
@@ -79,6 +85,7 @@ console.log("If the array is empty, this is what's returned: ", theArray);
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
 function find(value, array) {
   for (let numb of array) {
     if (numb === value) {
@@ -92,29 +99,28 @@ let theOtherArray = find(8, [1, 3, 9, 10, 8, 22, 42]);
 console.log('Was the value found?', theOtherArray);
 
 
+
+
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
+
 function isFirstLetter(letter, string) {
   if (string.charAt(0) === letter) {
     return true;
   }
   return false;
 }
-
 let theAnswer = isFirstLetter('b', 'ashley')
 console.log('Is the first letter "B"?', theAnswer)
 
 
 
 
-
-
-
-
 // 9. Function to return the sum of all numbers in an array
+
 function sumAll(array) {
   let sum = 0;
   // TODO: loop to add items
@@ -130,15 +136,12 @@ console.log(sum);
 
 
 
-//I don't think i did this right? lol
-
-
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-let newArray = [];
 function allPositive(array) {
+  let newArray = [];
   for(let numb of array) {
     if(numb > 0) {
       newArray.push(numb); 
@@ -147,14 +150,51 @@ function allPositive(array) {
   return newArray;
 }
 
-let thingy = allPositive([-1,-2,-3,-4,-5,-6,-7,-8,-9,-10]);
-console.log(thingy);
+console.log('Returning all positive numbers: ', allPositive([-1,-2,3,-4,-5,6,-7,-8,-9,10]));
+console.log('Returning all positive numbers: ', allPositive([-5,-6,-9]));
+
 
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+//Create a function that takes an array of numbers arr and returns an inverted array.
+
+function invertArray(arr) {
+  let invertedArray = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i] > 0) {
+      invertedArray.push(arr[i] * -1);
+    } else if (arr[i] < 0) {
+      invertedArray.push((arr[i] * arr[i]) / (arr[i] * -1));
+    } else {
+      invertedArray.push(0);
+    }
+  }
+  return invertedArray;
+  
+}
+console.log("Here's the inverted array: ", invertArray([6, -4, 8, -10, -3, 0]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // DO NOT MODIFY
